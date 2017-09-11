@@ -31,17 +31,17 @@ class Owner
 
   def buy_fish(name)
     new_fish = New.fish(name)
-    @pets{:fishes => new_fish}
+    @pets{:fishes}.push(new_fish)
   end
 
   def buy_cat(name)
     new_cat = New.cat(name)
-    @pets{:cats => new_cat}
+    @pets{:cats}.push(new_cat)
   end
 
   def buy_dog(name)
     new_dog = New.dog(name)
-    @pets{:dogs => new_dog}
+    @pets{:dogs}.push(new_dog)
   end
 
   def walk_dogs
@@ -49,5 +49,8 @@ class Owner
       dog.mood = "happy"
     end
   end
+
+  def play_with_cats
+    @pets{:cats}
 
 end
