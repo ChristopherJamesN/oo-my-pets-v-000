@@ -57,7 +57,7 @@ class Owner
   def feed_fish
     if @pets[:fish] == []
       @pets[:fish].each do |fish|
-        fish.mood = "happy"
+        fish.mood = "nervous"
       end
     end
   end
@@ -71,7 +71,7 @@ class Owner
     end
     if @pets[:fish] == []
       @pets[:fish].each do |fish|
-        fish.mood = "nervous"
+        fish.mood = "happy"
       end
     end
     @pets = {fishes: [], dogs: [], cats: []}
