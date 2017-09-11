@@ -5,4 +5,9 @@ class Owner
   def initialize(name)
     @name=name
   end
+
+  def reset_all
+    @@all=[]
+  end
+  
 end
