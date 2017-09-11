@@ -2,12 +2,13 @@ class Owner
   attr_accessor :name, :pets
   attr_reader :species
   @@all=[]
-  @pets = {fishes: [], dogs: [], cats: []}
+  
 
   def initialize(name)
     @name=name
     @species = "human"
     @@all.push(self)
+    @pets = {fishes: [], dogs: [], cats: []}
   end
 
   def self.reset_all
