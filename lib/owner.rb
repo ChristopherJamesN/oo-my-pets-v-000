@@ -78,17 +78,7 @@ class Owner
   end
 
     def list_pets
-      @pets[:dogs].each do |dog|
-        dog
-      end
-      @pets[:cats].each do |cat|
-        cat
-      end
-      if @pets[:fish] == []
-        @pets[:fish].each do |fish|
-          fish
-        end
-      end
+      "I have #{@pets[:fish].count} fish, #{@pets[:dogs].count} dog(s), and #{@pets[:cats].count} cat(s)."
     end
 
 
