@@ -12,4 +12,8 @@ class Owner
     @@all=[]
   end
 
+  def all
+    @@all
+  end
+
 end
