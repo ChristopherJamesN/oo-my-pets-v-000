@@ -74,6 +74,7 @@ class Owner
         fish.mood = "nervous"
       end
     end
+    @pets = {fishes: [], dogs: [], cats: []}
   end
 
     def list_pets
