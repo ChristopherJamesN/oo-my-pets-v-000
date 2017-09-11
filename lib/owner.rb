@@ -57,7 +57,7 @@ class Owner
   def feed_fish
     if @pets[:fish] == []
       @pets[:fish].each do |fish|
-        fish.mood = "nervous"
+        fish.mood = "happy"
       end
     end
   end
