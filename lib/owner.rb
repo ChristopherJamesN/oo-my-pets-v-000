@@ -41,11 +41,11 @@ class Owner
 
   def buy_dog(name)
     new_dog = New.dog(name)
-    @pets{:dogs}.push(new_dog)
+    @pets[:dogs].push(new_dog)
   end
 
   def walk_dogs
-    @pets{:dogs}.each do |dog|
+    @pets[:dogs].each do |dog|
       dog.mood = "happy"
     end
   end
