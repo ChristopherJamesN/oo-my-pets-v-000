@@ -76,15 +76,15 @@ class Owner
 
     def list_pets
       @pets{:dogs}.each do |dog|
-        dog.mood = "nervous"
+        dog
       end
       @pets{:cats}.each do |cat|
-        cat.mood = "nervous"
+        cat
       end
       @pets{:fish}.each do |fish|
-        fish.mood = "nervous"
+        fish
       end
     end
-      
+
 
 end
