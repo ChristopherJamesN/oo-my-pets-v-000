@@ -5,6 +5,7 @@ class Owner
   def initialize(name)
     @name=name
     @species = "human"
+    @@all.push(self)
   end
 
   def reset_all
