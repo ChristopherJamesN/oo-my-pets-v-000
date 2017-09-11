@@ -72,5 +72,19 @@ class Owner
     @pets{:fish}.each do |fish|
       fish.mood = "nervous"
     end
+  end
+
+    def list_pets
+      @pets{:dogs}.each do |dog|
+        dog.mood = "nervous"
+      end
+      @pets{:cats}.each do |cat|
+        cat.mood = "nervous"
+      end
+      @pets{:fish}.each do |fish|
+        fish.mood = "nervous"
+      end
+    end
+      
 
 end
