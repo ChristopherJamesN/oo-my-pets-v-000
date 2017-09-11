@@ -26,7 +26,6 @@ class Owner
     "I am a human."
   end
 
-
   def buy_fish(name)
     new_fish = Fish.new(name)
     @pets[:fishes].push(new_fish)
@@ -56,8 +55,10 @@ class Owner
   end
 
   def feed_fish
-    @pets[:fish].each do |fish|
-      fish.mood = "happy"
+    if @pets[:fish].length != 0
+      @pets[:fish].each do |fish|
+        fish.mood = "happy"
+      end
     end
   end
 
