@@ -31,12 +31,12 @@ class Owner
 
   def buy_fish(name)
     new_fish = New.fish(name)
-    @pets(:fishes).push(new_fish)
+    @pets[:fishes].push(new_fish)
   end
 
   def buy_cat(name)
     new_cat = New.cat(name)
-    @pets{:cats}.push(new_cat)
+    @pets[:cats].push(new_cat)
   end
 
   def buy_dog(name)
