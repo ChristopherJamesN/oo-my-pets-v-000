@@ -8,7 +8,7 @@ class Owner
     @@all.push(self)
   end
 
-  def reset_all
+  def self.reset_all
     @@all=[]
   end
 
