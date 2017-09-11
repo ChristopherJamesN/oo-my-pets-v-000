@@ -7,7 +7,6 @@ class Owner
     @name=name
     @species = "human"
     @@all.push(self)
-    pets
   end
 
   def self.reset_all
