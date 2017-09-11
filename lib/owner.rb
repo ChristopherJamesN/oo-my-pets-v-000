@@ -34,4 +34,14 @@ class Owner
     @pets{:fishes => new_fish}
   end
 
+  def buy_cat(name)
+    new_cat = New.cat(name)
+    @pets{:cats => new_cat}
+  end
+
+  def buy_dog(name)
+    new_dog = New.dog(name)
+    @pets{:dogs => new_dog}
+  end
+
 end
